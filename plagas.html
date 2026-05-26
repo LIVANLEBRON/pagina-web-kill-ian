@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Plagas en RD | kill-iAn</title>
+    <meta name="description" content="Conoce las plagas más comunes en la República Dominicana: comején, chiripas, cucarachas y roedores. Guía de hábitos y cómo eliminarlas definitivamente.">
+    <meta name="keywords" content="comejen dominicano, chiripas en la cocina, chinches de cama, plagas comunes Republica Dominicana, fumigadora de plagas">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pest-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .pest-card {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 2.5rem 2rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .pest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+        .pest-title {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: var(--text-primary);
+        }
+        .pest-badge {
+            display: inline-block;
+            background-color: rgba(249, 115, 22, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .pest-details {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        .pest-tip {
+            background-color: var(--bg-primary);
+            border-left: 3px solid var(--primary);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">kill-<span>iAn</span></span>
+                <span class="logo-sub">control de plagas</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="plagas.html" class="nav-link active">Plagas</a></li>
+                <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="tel:+18294415959" class="nav-cta">Llamar Ahora</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(255, 255, 255, 0) 100%); text-align: center; padding: 6rem 2rem 3rem 2rem;">
+        <div class="section-container">
+            <span class="section-subtitle">Aprende a Identificarlas</span>
+            <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Biblioteca de Plagas de RD</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Te mostramos los hábitos, peligros y soluciones más efectivas para las plagas comunes en el clima tropical de nuestra isla.</p>
+        </div>
+    </section>
+
+    <!-- Pest list grid -->
+    <section style="padding-top: 1rem;">
+        <div class="section-container">
+            <div class="pest-grid">
+                
+                <!-- Pest 1: Comejen -->
+                <div class="pest-card">
+                    <span class="pest-badge">Alto Riesgo Estructural</span>
+                    <h3 class="pest-title">Comején Subterráneo / Madera</h3>
+                    <p class="pest-details">Es una de las plagas más destructivas en la República Dominicana. Consumen celulosa y atacan silenciosamente marcos de puertas, gabinetes de cocina y vigas de madera.</p>
+                    <div class="pest-tip">
+                        <strong>Señal de Alerta:</strong> Presencia de túneles de tierra delgados sobre paredes o polvillo fino debajo de tus muebles.
+                    </div>
+                </div>
+
+                <!-- Pest 2: Chiripas -->
+                <div class="pest-card">
+                    <span class="pest-badge">Riesgo Sanitario Alto</span>
+                    <h3 class="pest-title">Chiripas (Cucarachas Alemanas)</h3>
+                    <p class="pest-details">Muy comunes en apartamentos y cocinas comerciales de Santo Domingo. Se reproducen a un ritmo alarmante y se esconden en motores de electrodomésticos, grietas y gavetas.</p>
+                    <div class="pest-tip">
+                        <strong>Señal de Alerta:</strong> Pequeños puntos negros (heces) en las bisagras de las gavetas y avistamientos durante la noche.
+                    </div>
+                </div>
+
+                <!-- Pest 3: Roedores -->
+                <div class="pest-card">
+                    <span class="pest-badge">Portadores de Enfermedades</span>
+                    <h3 class="pest-title">Ratas y Ratones Domésticos</h3>
+                    <p class="pest-details">Buscan comida y refugio en hogares y almacenes. Su orina y heces transmiten leptospirosis, una enfermedad muy peligrosa. Además, pueden morder cables y provocar cortocircuitos.</p>
+                    <div class="pest-tip">
+                        <strong>Señal de Alerta:</strong> Ruidos nocturnos de rasguños en techos de yeso o comida mordisqueada en la despensa.
+                    </div>
+                </div>
+
+                <!-- Pest 4: Chinches de Cama -->
+                <div class="pest-card">
+                    <span class="pest-badge">Molestia Nocturna Extrema</span>
+                    <h3 class="pest-title">Chinches de Cama</h3>
+                    <p class="pest-details">Plaga de rápida propagación que se aloja en colchones, cabeceros y costuras de muebles. Se alimentan de sangre humana por las noches causando ronchas y picazón severa.</p>
+                    <div class="pest-tip">
+                        <strong>Señal de Alerta:</strong> Manchas diminutas de sangre en las sábanas o picaduras alineadas en brazos y piernas.
+                    </div>
+                </div>
+
+                <!-- Pest 5: Pulgas y Garrapatas -->
+                <div class="pest-card">
+                    <span class="pest-badge">Afecta Mascotas y Humanos</span>
+                    <h3 class="pest-title">Pulgas y Garrapatas</h3>
+                    <p class="pest-details">Entran usualmente a través de mascotas pero pueden colonizar alfombras, patios y grietas rápidamente. Causan anemia en los animales y picaduras molestas en las piernas de los humanos.</p>
+                    <div class="pest-tip">
+                        <strong>Señal de Alerta:</strong> Mascotas rascándose excesivamente o pequeños insectos que saltan al caminar sobre alfombras.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Box -->
+            <div style="background-color: var(--bg-secondary); border-radius: 16px; border: 1px solid var(--border-color); padding: 3rem; margin-top: 4rem; text-align: center; box-shadow: var(--shadow-md);">
+                <h2>¿Identificas alguna de estas plagas en tu propiedad?</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 1rem auto 2rem auto;">No dejes que el problema avance. Una fumigación a tiempo te ahorrará miles de pesos en reparaciones médicas y del hogar.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="contacto.html" class="btn btn-primary">Solicitar Inspección Gratis</a>
+                    <a href="https://wa.me/18294415959" class="btn btn-secondary" target="_blank">Escribir por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+18294415959" class="sticky-call" id="sticky-call">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.802-5.14-4.118-6.942-6.942l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+        </svg>
+        <span>¡Llama Ahora!</span>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/18294415959" class="whatsapp-float" target="_blank" aria-label="Escríbenos por WhatsApp">
+        <svg class="whatsapp-icon-svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-main" style="color: white;">kill-<span>iAn</span></span>
+                    <span class="logo-sub" style="color: #64748b;">control de plagas</span>
+                </a>
+                <p>Empresa líder en el control, prevención y erradicación de todo tipo de plagas residenciales e industriales en República Dominicana.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="plagas.html">Plagas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="servicios.html#residencial">Residencial</a></li>
+                    <li><a href="servicios.html#comercial">Comercial</a></li>
+                    <li><a href="servicios.html#termitas">Termitas</a></li>
+                    <li><a href="servicios.html#roedores">Roedores</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul class="footer-links">
+                    <li>📍 GXC9+664 La Guáyiga</li>
+                    <li>📞 +1 (829) 441-5959</li>
+                    <li>✉️ contacto@kill-ian.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 kill-iAn. Todos los derechos reservados.</p>
+            <p>Diseño Web Profesional de Control de Plagas</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

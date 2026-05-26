@@ -57,4 +57,87 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // FAQ Accordion Logic
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            
+            // Close other open items
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+            
+            // Toggle active class on clicked item
+            item.classList.toggle('active');
+        });
+    });
+
+    // Pest Price Calculator Logic
+    const roomsSlider = document.getElementById('rooms-slider');
+    const roomsDisplay = document.getElementById('rooms-display');
+    const calcPest = document.getElementById('calc-pest');
+    const calcPriceDisplay = document.getElementById('calc-price-display');
+    const sendCalcWhatsapp = document.getElementById('send-calc-whatsapp');
+
+    if (roomsSlider && calcPest && calcPriceDisplay) {
+        const updatePrice = () => {
+            const rooms = parseInt(roomsSlider.value);
+            const pest = calcPest.value;
+            let label = rooms === 1 ? '1 Habitación / Área' : `${rooms} Habitaciones / Áreas`;
+            roomsDisplay.innerText = label;
+
+            // Price rates factors
+            let baseMin = 1500;
+            let baseMax = 2500;
+            let multiplier = 400; // price added per extra room/area
+
+            if (pest === 'comejen') {
+                baseMin = 3000;
+                baseMax = 5000;
+                multiplier = 800;
+            } else if (pest === 'roedores') {
+                baseMin = 2000;
+                baseMax = 3200;
+                multiplier = 500;
+            } else if (pest === 'pulgas') {
+                baseMin = 1800;
+                baseMax = 2800;
+                multiplier = 450;
+            }
+
+            const finalMin = baseMin + (rooms - 1) * multiplier;
+            const finalMax = baseMax + (rooms - 1) * multiplier;
+
+            const priceText = `RD$ ${finalMin.toLocaleString()} - RD$ ${finalMax.toLocaleString()}`;
+            calcPriceDisplay.innerText = priceText;
+
+            // Update WhatsApp link with pre-filled message
+            const pestNames = {
+                'chiripas': 'Chiripas y Cucarachas',
+                'comejen': 'Comején / Termitas',
+                'roedores': 'Ratas y Ratones',
+                'pulgas': 'Pulgas y Garrapatas'
+            };
+            const textMessage = encodeURIComponent(
+                `Hola kill-iAn, me gustaría reservar un servicio. \n\n` +
+                `Detalles de mi cotización:\n` +
+                `- Propiedad: ${rooms} habitaciones/áreas\n` +
+                `- Plaga: ${pestNames[pest] || pest}\n` +
+                `- Rango estimado: ${priceText}\n\n` +
+                `¿Cuándo tienen disponibilidad para una inspección?`
+            );
+            sendCalcWhatsapp.href = `https://wa.me/18294415959?text=${textMessage}`;
+        };
+
+        // Event listeners
+        roomsSlider.addEventListener('input', updatePrice);
+        calcPest.addEventListener('change', updatePrice);
+
+        // Run on load
+        updatePrice();
+    }
 });

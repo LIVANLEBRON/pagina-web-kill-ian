@@ -64,6 +64,7 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
                 <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="plagas.html" class="nav-link">Plagas</a></li>
                 <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
                 <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
                 <li><a href="tel:+18294415959" class="nav-cta">Llamar Ahora</a></li>
@@ -81,7 +82,7 @@
     </section>
 
     <!-- Form & Contact Details -->
-    <section style="padding-top: 1rem;">
+    <section style="padding-top: 1rem; padding-bottom: 3rem;">
         <div class="section-container" style="display: flex; gap: 4rem; flex-wrap: wrap;">
             
             <!-- Contact Form Card -->
@@ -109,9 +110,9 @@
                             <label for="plaga">Tipo de Plaga Principal</label>
                             <select id="plaga" name="plaga" required>
                                 <option value="" disabled selected>Selecciona una opción</option>
-                                <option value="insectos">Cucarachas / Hormigas / Arañas</option>
+                                <option value="insectos">Cucarachas / Hormigas / Arañas / Chiripas</option>
                                 <option value="roedores">Ratas / Ratones</option>
-                                <option value="termitas">Termitas o Carcoma</option>
+                                <option value="termitas">Termitas o Comején</option>
                                 <option value="mosquitos">Mosquitos / Voladores</option>
                                 <option value="otra">Otra plaga / Inspección general</option>
                             </select>
@@ -131,7 +132,7 @@
             <div style="flex: 0.7; min-width: 280px; display: flex; flex-direction: column; gap: 2rem;">
                 <div style="background-color: var(--bg-secondary); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
                     <h4 style="margin-bottom: 1rem; color: var(--text-primary);">📍 Ubicación de Cobertura</h4>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Nos encontramos en La Guáyiga y brindamos cobertura integral en toda la zona metropolitana.</p>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Nos encontramos en La Guáyiga y brindamos cobertura integral en toda la zona metropolitana de Santo Domingo.</p>
                     
                     <!-- Google Map Embedded Responsively -->
                     <div class="map-container">
@@ -170,6 +171,51 @@
         </div>
     </section>
 
+    <!-- Interactive Pricing Calculator Section -->
+    <section style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 5rem 2rem;">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle">Calcula en Línea</span>
+                <h2 class="section-title">Cotizador Estimado de Plagas</h2>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem;">Haz una estimación rápida del costo del tratamiento según el tamaño del lugar y la plaga.</p>
+            </div>
+            
+            <div class="calculator-card">
+                <!-- Size Slider -->
+                <div class="calc-range-wrap">
+                    <div class="calc-range-label">
+                        <span>Tamaño de la Propiedad:</span>
+                        <span id="rooms-display">2 Habitaciones / Áreas</span>
+                    </div>
+                    <input type="range" id="rooms-slider" min="1" max="8" value="2" class="calc-slider">
+                </div>
+
+                <!-- Pest Selector -->
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <label for="calc-pest">Selecciona la Plaga:</label>
+                    <select id="calc-pest" style="width: 100%; padding: 0.8rem;">
+                        <option value="chiripas">Chiripas y Cucarachas (Fumigación regular)</option>
+                        <option value="comejen">Comején / Termitas (Inyección profunda)</option>
+                        <option value="roedores">Ratas y Ratones (Exclusión / Trampas)</option>
+                        <option value="pulgas">Pulgas y Garrapatas</option>
+                    </select>
+                </div>
+
+                <!-- Result Box -->
+                <div class="calc-result-box">
+                    <span style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary);">Presupuesto Estimado en RD$</span>
+                    <div class="calc-price" id="calc-price-display">RD$ 2,500 - RD$ 3,800</div>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary);">*Los precios varían de acuerdo a la inspección física final y nivel de infestación.</p>
+                </div>
+
+                <!-- Send to WhatsApp Button -->
+                <a href="#" id="send-calc-whatsapp" target="_blank" class="btn btn-primary" style="width: 100%; display: inline-flex; gap: 0.75rem;">
+                    💬 Reservar Presupuesto por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Floating Call Button -->
     <a href="tel:+18294415959" class="sticky-call" id="sticky-call">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
@@ -193,13 +239,14 @@
                     <span class="logo-main" style="color: white;">kill-<span>iAn</span></span>
                     <span class="logo-sub" style="color: #64748b;">control de plagas</span>
                 </a>
-                <p>Empresa líder en el control, prevención y erradicación de todo tipo de plagas residenciales e industriales.</p>
+                <p>Empresa líder en el control, prevención y erradicación de todo tipo de plagas residenciales e industriales en República Dominicana.</p>
             </div>
             <div class="footer-column">
                 <h4>Enlaces Rápidos</h4>
                 <ul class="footer-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="plagas.html">Plagas</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
