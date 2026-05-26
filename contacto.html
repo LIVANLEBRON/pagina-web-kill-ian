@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Cotizaciones | kill-iAn</title>
+    <meta name="description" content="Solicita una cotización gratuita para fumigación de plagas. Formulario en línea rápido, números telefónicos y cobertura de servicios de kill-iAn.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            background-color: var(--bg-primary);
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+            background-color: white;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">kill-<span>iAn</span></span>
+                <span class="logo-sub">control de plagas</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                <li><a href="tel:+18294415959" class="nav-cta">Llamar Ahora</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Contact Intro -->
+    <section style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(255, 255, 255, 0) 100%); text-align: center; padding: 6rem 2rem 3rem 2rem;">
+        <div class="section-container">
+            <span class="section-subtitle">Presupuesto sin compromiso</span>
+            <h1 class="section-title" style="font-size: 3rem; margin-bottom: 1rem;">Contáctanos Hoy Mismo</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Estamos listos para ayudarte. Completa el formulario de abajo o llámanos directamente por teléfono o WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Form & Contact Details -->
+    <section style="padding-top: 1rem;">
+        <div class="section-container" style="display: flex; gap: 4rem; flex-wrap: wrap;">
+            
+            <!-- Contact Form Card -->
+            <div style="flex: 1.3; min-width: 320px; background-color: var(--bg-secondary); padding: 3rem 2rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-md);">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Solicitud de Cotización Gratis</h3>
+                
+                <form id="pest-quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Número de Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +1 829-441-5959">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="plaga">Tipo de Plaga Principal</label>
+                            <select id="plaga" name="plaga" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="insectos">Cucarachas / Hormigas / Arañas</option>
+                                <option value="roedores">Ratas / Ratones</option>
+                                <option value="termitas">Termitas o Carcoma</option>
+                                <option value="mosquitos">Mosquitos / Voladores</option>
+                                <option value="otra">Otra plaga / Inspección general</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalles de la Plaga o Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente el problema (ej: avistamientos en cocina, ruidos nocturnos...)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1rem; padding: 1rem 2rem; margin-top: 1rem;">Enviar Solicitud de Presupuesto</button>
+                </form>
+            </div>
+
+            <!-- Direct Contact Info -->
+            <div style="flex: 0.7; min-width: 280px; display: flex; flex-direction: column; gap: 2rem;">
+                <div style="background-color: var(--bg-secondary); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+                    <h4 style="margin-bottom: 1rem; color: var(--text-primary);">📍 Ubicación de Cobertura</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Nos encontramos en La Guáyiga y brindamos cobertura integral en toda la zona metropolitana.</p>
+                    
+                    <!-- Google Map Embedded Responsively -->
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=GXC9%2B664%20La%20Gu%C3%A1yiga&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div style="background-color: var(--bg-secondary); padding: 2.5rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+                    <h4 style="margin-bottom: 1.5rem; color: var(--text-primary);">Atención Directa</h4>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1.25rem;">
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <span style="font-size: 1.5rem;">📞</span>
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary); display: block;">Llamadas de Urgencia</span>
+                                <a href="tel:+18294415959" style="font-weight: 700; color: var(--primary);">+1 (829) 441-5959</a>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <span style="font-size: 1.5rem;">💬</span>
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary); display: block;">WhatsApp Directo</span>
+                                <a href="https://wa.me/18294415959" target="_blank" style="font-weight: 700; color: var(--primary);">+1 (829) 441-5959</a>
+                            </div>
+                        </li>
+                        <li style="display: flex; gap: 1rem; align-items: center;">
+                            <span style="font-size: 1.5rem;">✉️</span>
+                            <div>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary); display: block;">Correo de Soporte</span>
+                                <a href="mailto:contacto@kill-ian.com" style="font-weight: 700; color: var(--text-primary);">contacto@kill-ian.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+18294415959" class="sticky-call" id="sticky-call">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-2.824-1.802-5.14-4.118-6.942-6.942l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+        </svg>
+        <span>¡Llama Ahora!</span>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/18294415959" class="whatsapp-float" target="_blank" aria-label="Escríbenos por WhatsApp">
+        <svg class="whatsapp-icon-svg" viewBox="0 0 448 512">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <span class="logo-main" style="color: white;">kill-<span>iAn</span></span>
+                    <span class="logo-sub" style="color: #64748b;">control de plagas</span>
+                </a>
+                <p>Empresa líder en el control, prevención y erradicación de todo tipo de plagas residenciales e industriales.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="servicios.html#residencial">Residencial</a></li>
+                    <li><a href="servicios.html#comercial">Comercial</a></li>
+                    <li><a href="servicios.html#termitas">Termitas</a></li>
+                    <li><a href="servicios.html#roedores">Roedores</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul class="footer-links">
+                    <li>📍 GXC9+664 La Guáyiga</li>
+                    <li>📞 +1 (829) 441-5959</li>
+                    <li>✉️ contacto@kill-ian.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 kill-iAn. Todos los derechos reservados.</p>
+            <p>Diseño Web Profesional de Control de Plagas</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
