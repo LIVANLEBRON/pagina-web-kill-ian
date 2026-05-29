@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Update WhatsApp link with pre-filled message
             const pestNames = {
-                'chiripas': 'Chiripas y Cucarachas',
+                'cucarachas': 'Cucarachas',
                 'comejen': 'Comején / Termitas',
                 'roedores': 'Ratas y Ratones',
                 'pulgas': 'Pulgas y Garrapatas'
