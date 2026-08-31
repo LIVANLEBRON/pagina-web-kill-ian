@@ -104,9 +104,20 @@ header {
 
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: clamp(0.85rem, 1.5vw, 2rem);
     list-style: none;
     align-items: center;
+}
+
+.language-link {
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.85rem;
+}
+
+.language-link::after {
+    display: none;
 }
 
 .nav-link {
@@ -338,6 +349,80 @@ section {
     color: var(--text-primary);
 }
 
+.section-intro {
+    color: var(--text-secondary);
+    max-width: 760px;
+    margin: 1rem auto 0;
+    line-height: 1.75;
+}
+
+.page-hero {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.06) 0%, rgba(255, 255, 255, 0) 100%);
+    text-align: center;
+    padding: 6rem 2rem 3rem;
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.coverage-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.coverage-card h2,
+.coverage-card h3 {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.coverage-card p,
+.coverage-note {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.coverage-note {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.coverage-note a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.service-detail {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.service-detail h2 {
+    margin-bottom: 1rem;
+}
+
+.service-detail p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+}
+
 /* Bento Grid */
 .bento-grid {
     display: grid;
@@ -563,6 +648,11 @@ footer {
     cursor: pointer;
     user-select: none;
     transition: var(--transition);
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: var(--text-primary);
+    text-align: left;
 }
 
 .accordion-header:hover {
@@ -709,6 +799,9 @@ footer {
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .coverage-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
@@ -740,6 +833,10 @@ footer {
     
     .bento-card.large {
         grid-column: span 1;
+    }
+
+    .service-list {
+        grid-template-columns: 1fr;
     }
     
     .hero-title {
