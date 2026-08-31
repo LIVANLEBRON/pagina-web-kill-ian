@@ -3,115 +3,115 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/</loc>
+    <loc>https://www.kill-lan.com/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/"/>
     <image:image>
-      <image:loc>https://pagina-web-kill-ian.vercel.app/assets/hero-home.png</image:loc>
+      <image:loc>https://www.kill-lan.com/assets/hero-home.png</image:loc>
       <image:title>Fumigación y control de plagas en República Dominicana</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/servicios</loc>
+    <loc>https://www.kill-lan.com/servicios</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/servicios"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/services"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/servicios"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/servicios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/servicios"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/plagas</loc>
+    <loc>https://www.kill-lan.com/plagas</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/plagas"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/pests"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/plagas"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/plagas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/pests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/plagas"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/nosotros</loc>
+    <loc>https://www.kill-lan.com/nosotros</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/nosotros"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/nosotros"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/contacto</loc>
+    <loc>https://www.kill-lan.com/contacto</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/contacto"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/contacto"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/contacto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/contacto"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en</loc>
+    <loc>https://www.kill-lan.com/en</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en/services</loc>
+    <loc>https://www.kill-lan.com/en/services</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/servicios"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/services"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/servicios"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/servicios"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/servicios"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en/pests</loc>
+    <loc>https://www.kill-lan.com/en/pests</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/plagas"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/pests"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/plagas"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/plagas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/pests"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/plagas"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en/about</loc>
+    <loc>https://www.kill-lan.com/en/about</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/nosotros"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/about"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/nosotros"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/nosotros"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en/contact</loc>
+    <loc>https://www.kill-lan.com/en/contact</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/contacto"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/contact"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/contacto"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/contacto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/contacto"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/fumigacion-santo-domingo</loc>
+    <loc>https://www.kill-lan.com/fumigacion-santo-domingo</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/fumigacion-santo-domingo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/pest-control-santo-domingo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/fumigacion-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/fumigacion-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/pest-control-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/fumigacion-santo-domingo"/>
   </url>
   <url>
-    <loc>https://pagina-web-kill-ian.vercel.app/en/pest-control-santo-domingo</loc>
+    <loc>https://www.kill-lan.com/en/pest-control-santo-domingo</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="es-DO" href="https://pagina-web-kill-ian.vercel.app/fumigacion-santo-domingo"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pagina-web-kill-ian.vercel.app/en/pest-control-santo-domingo"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pagina-web-kill-ian.vercel.app/fumigacion-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://www.kill-lan.com/fumigacion-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.kill-lan.com/en/pest-control-santo-domingo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.kill-lan.com/fumigacion-santo-domingo"/>
   </url>
 </urlset>

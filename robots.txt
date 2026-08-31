@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pagina-web-kill-ian.vercel.app/sitemap.xml
+Sitemap: https://www.kill-lan.com/sitemap.xml
