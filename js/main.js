@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = data.get('nombre') || '';
       const phone = data.get('telefono') || '';
       const pest = data.get('plaga') || 'No especificada';
+      const location = data.get('ubicacion') || 'No especificada';
       const message = data.get('mensaje') || '';
-      const text = encodeURIComponent('Hola kill-iAn, quiero solicitar una cotización.\n\nNombre: ' + name + '\nTeléfono: ' + phone + '\nPlaga: ' + pest + '\nDetalles: ' + message);
+      const text = encodeURIComponent('Hola kill-iAn, quiero solicitar una cotización.\n\nNombre: ' + name + '\nTeléfono: ' + phone + '\nPlaga: ' + pest + '\nUbicación: ' + location + '\nDetalles: ' + message);
       window.open('https://wa.me/18294415959?text=' + text, '_blank', 'noopener');
     });
   }
