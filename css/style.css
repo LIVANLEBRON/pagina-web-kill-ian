@@ -242,7 +242,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.035em;line-height:1
 
 /* Floating contact actions */
 .call-float{
-  position:fixed;right:18px;bottom:86px;z-index:91;
+  position:fixed;right:18px;bottom:18px;z-index:91;
   min-height:52px;padding:.8rem 1rem;border-radius:999px;
   display:flex;align-items:center;gap:.55rem;
   background:var(--ink);color:#fff;font-weight:800;
@@ -251,7 +251,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.035em;line-height:1
 }
 .call-float:hover{transform:translateY(-2px);background:var(--forest)}
 .call-float svg{width:18px;height:18px}
-.whatsapp-float{bottom:18px}
+.whatsapp-float{bottom:86px}
 .map-embed{
   width:100%;min-height:360px;border:0;border-radius:24px;
   box-shadow:var(--shadow-sm)
@@ -263,7 +263,7 @@ h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.035em;line-height:1
 .contact-map-card h3{font-size:1.1rem;margin:0 0 .8rem}
 .contact-map-card p{color:var(--muted);font-size:.9rem;margin-bottom:1rem}
 @media(max-width:680px){
-  .call-float{right:14px;bottom:82px;padding:.75rem .9rem}
+  .call-float{right:14px;bottom:14px;padding:.75rem .9rem}
   .call-float span{display:none}
   .call-float{width:54px;height:54px;justify-content:center;padding:0}
 }
