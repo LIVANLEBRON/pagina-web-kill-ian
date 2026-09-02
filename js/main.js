@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (location.pathname === '/') {
+    const heading = document.querySelector('h1');
+    if (heading) {
+      heading.classList.add('hero-title-brand');
+      heading.innerHTML = '<span class="hero-control">Control de plagas</span><span class="hero-professionals">Profesionales a tu servicio.</span>';
+    }
+  }
   const nav = document.querySelector('.nav');
   const button = document.querySelector('.menu-button');
   if (nav && button) button.addEventListener('click', () => { const open = nav.classList.toggle('open'); button.setAttribute('aria-expanded', String(open)); button.textContent = open ? '×' : '☰'; });
